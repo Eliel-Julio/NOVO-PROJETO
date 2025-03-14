@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background: burlywood url(../imagens/fundo-madeira.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    main{
+        height: 100vh;
+        width: 100vw;
+        section{
+            &#telefone{
+                background: transparent url("../imagens/frame-iphone.png") no-repeat;
+                background-size: 80% 100%;
+                height: 502px;
+                width: 311px;
+                margin: 0px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-40%, -50%);
+                #tela{
+                    position: relative;
+                    left: 17px;
+                    top: 64px;
+                    width: 214px;
+                    height: 377px;
+                }
+            }
+            &#redes-sociais{
+                /* background-color: rgba(255, 255, 0, 0.559); */
+                height: 90vh;
+                width: 100px;
+                margin: 0px;
+                position: absolute;
+                top: 0%;
+                left: 100%;
+                transform: translate(-110%,5%);
+                ul{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50% ,-50%);
+                    list-style-type: none;
+                    li{
+                        padding-bottom: 15px;
+                        img{
+                            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.447);
+                            height: 60px;
+                            border-radius: 50%;
+                            &:hover{
+                                transform: translate(-5px,-5px);
+                                height: 65px;
+                                transition: transform 500ms, height  500ms;
+                                /* transition:   3s; */
+                                
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
